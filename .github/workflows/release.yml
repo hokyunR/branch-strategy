@@ -35,6 +35,7 @@ jobs:
         with:
           name: ${{ steps.set_information.outputs.version }}
           tag: ${{ steps.set_information.outputs.version }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: true
 
       - name: 🚢 Create a new release
@@ -43,3 +44,4 @@ jobs:
         with:
           name: ${{ steps.set_information.outputs.version }}
           tag: ${{ steps.set_information.outputs.version }}
+          token: ${{ secrets.GITHUB_TOKEN }}
