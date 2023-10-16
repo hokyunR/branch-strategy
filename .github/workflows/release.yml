@@ -32,8 +32,6 @@ jobs:
       - name: ⛵️ Create a new pre-release
         if: ${{ steps.set_information.outputs.prerelease == 'true' }}
         uses: ncipollo/release-action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           name: ${{ steps.set_information.outputs.version }}
           tag: ${{ steps.set_information.outputs.version }}
@@ -42,8 +40,6 @@ jobs:
       - name: 🚢 Create a new release
         if: ${{ steps.set_information.outputs.prerelease == 'false' }}
         uses: ncipollo/release-action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           name: ${{ steps.set_information.outputs.version }}
           tag: ${{ steps.set_information.outputs.version }}
