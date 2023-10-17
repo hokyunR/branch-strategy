@@ -1,9 +1,22 @@
 # All rules apply to the main branch only
 
 # Base rules
+
 /.github/workflows/release.yml @oseongkwon1
 /.github/workflows/deployment.yml @oseongkwon1
 /.github/CODEOWNERS @oseongkwon1
 
 # Custom rule for leaders
+
 /.github/workflows/deployment.yml @hokyunR
+*.go @hokyunR
+*.py @hokyunR
+*.ini @hokyunR
+*.sh @hokyunR
+*.cpp @hokyunR
+*.c @hokyunR
+*.h @hokyunR
+*.js @hokyunR
+*.jsx @hokyunR
+*.ts @hokyunR
+*.tsx @hokyunR
