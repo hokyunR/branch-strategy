@@ -4,4 +4,4 @@
 /.github/CODEOWNERS @oseongkwon1
 
 # Custom rule
-/.github/workflows/deployment.yml @hokyunR
+* @hokyunR
