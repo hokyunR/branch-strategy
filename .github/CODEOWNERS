@@ -6,8 +6,5 @@
 /.github/CODEOWNERS @oseongkwon1
 
 # Custom rule for leaders
-* @hokyunR
 !/.github/workflows/release.yml @hokyunR
 !/.github/CODEOWNERS @hokyunR
-
-# HI
