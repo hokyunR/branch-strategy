@@ -1,0 +1,20 @@
+name: Deploy to production
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: 🚀 Deploy to production
+        run: |
+          echo "Deploying to production on branch $GITHUB_REF"
+          echo "Complete this file for your own use."
