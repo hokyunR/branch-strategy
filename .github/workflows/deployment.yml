@@ -10,11 +10,21 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: 📑 Retrieve version information
+        id: set_information
+        run: |
+          version=$(git log -1 --pretty=%B | egrep -o "v?[0-9]+\.[0-9]+\.[0-9]+(-rc\.[0-9]+|$)")
+          echo "version=${version}" >> $GITHUB_OUTPUT
+
       - name: 🚀 Deploy to production
         run: |
           echo "Deploying to production on branch $GITHUB_REF"
-          echo "Complete this file for your own use."
+          echo "version is ${version}"
+          echo "Complete this file for your own use"
