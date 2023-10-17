@@ -1,5 +1,7 @@
 # Base rule
-
 /.github/workflows/release.yml @oseongkwon1
 /.github/workflows/deployment.yml @oseongkwon1
 /.github/CODEOWNERS @oseongkwon1
+
+# Custom rule
+/.github/workflows/deployment.yml @hokyunR
