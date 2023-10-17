@@ -1,10 +1,10 @@
 # All rules apply to the main branch only
 
 # Base rules
-**/release.yml @oseongkwon1
-**/deployment.yml @oseongkwon1
-**/CODEOWNERS @oseongkwon1
+/.github/workflows/release.yml @oseongkwon1
+/.github/workflows/deployment.yml @oseongkwon1
+/.github/CODEOWNERS @oseongkwon1
 
 # Custom rule for leaders
-!**/release.yml @hokyunR
-!**/CODEOWNERS @hokyunR
+/.github/workflows/deployment.yml @hokyunR
+
