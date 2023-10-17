@@ -1,10 +1,9 @@
 name: Deploy to production
 
 on:
-  release:
-    types:
-      - prereleased
-      - released
+  workflow_run:
+    workflows: [Create a new release]
+    types: [completed]
 
 jobs:
   deploy:
