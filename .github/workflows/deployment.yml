@@ -1,5 +1,5 @@
 # Do not modify the items below
-name: Deploy to production1
+name: Deploy to production
 
 on:
   workflow_run:
