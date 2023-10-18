@@ -7,5 +7,5 @@
 # Rules for security
 
 /.github/workflows/release.yml @oseongkwon1
-/.github/workflows/deployment.yml @oseongkwon1
+/.github/workflows/deployment.yml @oseongkwon1 @hokyunR
 /.github/CODEOWNERS @oseongkwon1
