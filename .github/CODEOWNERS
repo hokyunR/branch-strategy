@@ -2,10 +2,10 @@
 
 # Rule for leaders
 
-* @hokyunR
+* @leader
 
 # Rules for security
 
-/.github/workflows/release.yml @oseongkwon1
-/.github/workflows/deployment.yml @oseongkwon1 @hokyunR
-/.github/CODEOWNERS @oseongkwon1
+/.github/workflows/release.yml @bot
+/.github/workflows/deployment.yml @bot @leader
+/.github/CODEOWNERS @security
