@@ -3,3 +3,5 @@
 # Rule for leaders
 
 /[Dd]oc/* @hokyunR
+
+/src/* @hokyunR
